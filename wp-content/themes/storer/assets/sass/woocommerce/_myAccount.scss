@@ -1,0 +1,22 @@
+table{
+    &.woocommerce-orders-table.shop_table{
+        font-size: 14px;
+        th{
+            flex-grow: 1;
+        }
+        tbody{
+            tr{
+                align-items: center;
+                td{
+                    margin-top: 15px;
+                    @include media(sm){
+                        flex: initial;
+                        max-width: initial;
+                        flex-grow: 1;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

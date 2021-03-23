@@ -1,0 +1,42 @@
+
+.#{$prefix}-title-style-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .#{$prefix}-section-title{
+        margin: 0;
+    }
+    a{
+        display: inline-block;
+        padding: 0 5px;
+        color: $primary_color;
+        font-weight: $font_weight_semi_bold;
+        @include border-bottom(2px,solid);
+        border-color: $primary_color;
+    }
+    .#{$prefix}-slick{
+        position: relative;
+    }  
+}
+.#{$prefix}-page-title{
+    position: relative;
+    padding-bottom: 10px;
+    &:before,
+    &:after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+    }
+    &:before{
+        width: 100%;
+        background-color: #EDEDED;
+    }
+    &::after{
+        width: 200px;
+        background-color: $primary_color;
+        z-index: 1;
+    }
+}

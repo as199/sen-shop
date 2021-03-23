@@ -1,0 +1,54 @@
+.admin-bar{
+    .#{$prefix}-offcanvas-section{
+        top: 30px;
+    }
+}
+.#{$prefix}-offcanvas-section{
+    position: fixed;
+    top: 0;
+    right: -800px;
+    z-index: 11;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: $color_white;
+    color: $text_color;
+    @include transition();
+    padding: 15px 30px;
+    @include media(sm){
+        width: 400px;
+    }
+    &.show{
+        right: 0;
+    }
+    .#{$prefix}-close-section{
+        text-align: right;
+        cursor: pointer;
+        button{
+            padding: 0;
+            background-color: transparent;
+            font-size: 25px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            color: $secondary_color;
+            &:hover{
+                @include animation(#{$prefix}-rotate-center 0.5s ease-in both);
+            }
+        }
+    }
+    .widget{
+        background-color: $color_light_gray;
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        &:last-child{
+            margin-bottom: 30px;
+        }
+    }
+    .#{$prefix}-arrow{
+        .slick-arrow{
+            background-color: $color_white;
+        }
+    }
+}

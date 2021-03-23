@@ -1,0 +1,24 @@
+
+.desktop ul.#{$prefix}-nav-menu>li,
+.desktop div.#{$prefix}-nav-menu>ul>li{
+    position: relative;
+}
+.desktop ul.#{$prefix}-nav-menu>li .sub-menu,
+.desktop div.#{$prefix}-nav-menu>ul>li .children{
+    @extend %second-level;
+}
+.desktop ul.#{$prefix}-nav-menu>li .sub-menu li,
+.desktop div.#{$prefix}-nav-menu>ul>li .children li{
+    display: block;
+    width: 100%;
+}
+.desktop ul.#{$prefix}-nav-menu>li:hover .sub-menu,
+.desktop ul.#{$prefix}-nav-menu>li:focus-within .sub-menu,
+.desktop div.#{$prefix}-nav-menu>ul>li:hover .children,
+.desktop div.#{$prefix}-nav-menu>ul>li:focus-within .children{
+    top: 100%;
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+    visibility: visible;
+}

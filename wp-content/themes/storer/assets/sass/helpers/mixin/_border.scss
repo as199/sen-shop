@@ -1,0 +1,20 @@
+@mixin border($border_width:1px,$border_style:solid){
+    border-width: $border_width;
+    border-style: $border_style;
+}
+@mixin border-top($border_width:1px,$border_style:solid){
+    border-top-width: $border_width;
+    border-top-style: $border_style;
+}
+@mixin border-left($border_width:1px,$border_style:solid){
+    border-left-width: $border_width;
+    border-left-style: $border_style;
+}
+@mixin border-bottom($border_width:1px,$border_style:solid){
+    border-bottom-width: $border_width;
+    border-bottom-style: $border_style;
+}
+@mixin border-right($border_width:1px,$border_style:solid){
+    border-right-width: $border_width;
+    border-right-style: $border_style;
+}

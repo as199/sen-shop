@@ -1,0 +1,76 @@
+
+.woocommerce{
+    ul{
+        &.products{
+            li{
+                &.product{
+                    .#{$prefix}-sale-badge{
+                        .onsale{
+                            right: initial;
+                            left: 0;
+                            margin: 0;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+            .#{$prefix}-product{
+                .#{$prefix}-product-title{
+                    padding: 10px 0 0;
+                }
+                .#{$prefix}-product-title-sm{
+                    font-size: 14px;
+                }
+                div{
+                    a{
+                        img{
+                            margin: 0;
+                        }
+                    } 
+                    
+                }
+                .#{$prefix}-quick-view-icon,
+                .#{$prefix}-compare-icon,
+                .#{$prefix}-product-wishlist-icon{
+                    .compare,
+                    .button{
+                        margin-top: 0;
+                        padding: 0;
+                        border-radius: 100%;
+                        line-height: 30px;
+                    }
+                }
+                .#{$prefix}-btn-section{
+                    .button{
+                        margin-top: 0;
+                        background-color: transparent;
+                        color: $text_color;
+                        &:hover{
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.related{
+    &.products{
+        padding-top: 15px;
+        h2,h3,h4{
+            margin: 10px 0 0;
+        }
+    }
+}
+
+.#{$prefix}-product{
+    ul{
+        &.#{$prefix}-product-featured-icon-list{
+            margin: 0;
+        }
+    }
+} 
+
+
+
+

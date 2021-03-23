@@ -1,0 +1,29 @@
+.site-content{
+    .widget{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    p,
+    .page-title{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+.#{$prefix}-archive-post-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    .entry-content,
+    .entry-summary{
+        margin: 0;
+    }
+    .#{$prefix}-archive-post{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}

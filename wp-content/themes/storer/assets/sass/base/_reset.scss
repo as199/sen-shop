@@ -1,0 +1,14 @@
+
+body{
+    margin: 0;
+    &.page{
+        margin: 0;
+    }
+    input,
+    textarea{
+        outline: none;
+    }
+    button{
+        outline: none;
+    }
+}

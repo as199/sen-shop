@@ -1,0 +1,99 @@
+.woocommerce{
+    .product{
+        div{
+            &.woocommerce-tabs{
+                margin-top: 30px;
+                p,
+                h1,h2,h3,h4{
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                }
+                ul{
+                    &.tabs{
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        &:before{
+                            content: none;
+                            border: 0;
+                        }
+                        li{
+                            margin: 0;
+                            padding: 0;
+                            border-radius: 0;
+                            background-color: #fff;
+                            border: 0;
+                            border-top: 1px solid;
+                            border-right: 1px solid;
+                            border-color: $color_light_gray;
+                            flex-grow: 1;
+                            &:before,
+                            &:after{
+                                content: none;
+                            }
+                            &:first-child{
+                                border-left: 1px solid $color_light_gray;
+                            }
+                            a{
+                                padding: 10px 15px;
+                                color: $text_color;
+                                font-weight: $font_weight_semi_bold;
+                                &:active{
+                                    color: $secondary_color;
+                                }
+                            }
+                        }
+                    }
+                }
+                .woocommerce-Tabs-panel{
+                    margin: 0;
+                    padding: 20px 30px 30px;
+                    border: 1px solid $color_light_gray;
+                }
+                table{
+                    &.shop_attributes{
+                        margin: 15px 0 0;
+                        border-top: 0;
+                        tr{
+                            display: flex;
+                            flex-wrap: wrap;
+                            @include border-top();
+                            border-color: $color_light_gray;
+                            align-items: center;
+                            padding: 10px 15px;
+
+                            &:first-child{
+                                border-top: 0;
+                            }
+                            &:nth-child(even){
+                                th,td{
+                                    background-color: transparent;
+                                }
+                            }
+                            p{
+                                margin-top: 0;
+                            }
+                        }
+                        th{
+                            padding: 0;
+                            text-align: left ;
+                            width: 200px;
+                        }
+                        th,
+                        td{
+                            border: 0;
+                            font-style: normal;
+                        }
+                    }
+                }
+            }
+
+        }
+    } 
+} 
+
+
+
+
+
+

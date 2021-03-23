@@ -1,0 +1,73 @@
+.admin-bar{
+    .#{$prefix}-mobile-menu{
+        top: 30px;
+    }
+}
+.#{$prefix}-mobile-menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    background-color: $color_white;
+    padding: 30px;
+    color: $color_white;
+    overflow-y: auto; 
+    transition: all 0.5s ease;
+    .#{$prefix}-menu-description{
+        margin: 0 10px;
+    }
+    @include media(sm){
+        width: 400px;
+    }
+    &.show{
+        right: 0;
+    }
+    .#{$prefix}-mobile-close-icon{
+        text-align: right;
+        cursor: pointer;
+        button{
+            padding: 0;
+            background-color: transparent;
+            font-size: 25px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            color: $secondary_color;
+            outline: 0;
+            &:hover{
+                color: $color_black;
+            }
+            &:active{
+                outline: 0;
+            }
+           
+            &:focus{
+                outline: thin dotted; 
+            }
+        }
+    }
+
+    ul{
+        @extend %reset-ul;
+        li{
+            a{
+                display: block;
+                font-weight: $font_weight_semi_bold;
+                font-size: 1rem;
+                line-height: 1;
+                padding: 10px 0;
+                position: relative;
+            }
+            ul{
+                padding-left: 20px;
+                a{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    
+}

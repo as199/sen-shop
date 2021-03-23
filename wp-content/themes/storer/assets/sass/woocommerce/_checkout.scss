@@ -1,0 +1,90 @@
+.woocommerce-checkout{
+    .checkout .col2-set .col-2 #ship-to-different-address{
+        float: none;
+        margin-bottom: 15px;
+    }
+    .col2-set{
+        .col-1,
+        .col-2{
+            float: none;
+            width: 100%;
+        }
+    }
+    .woocommerce-billing-fields__field-wrapper{
+        margin-top: 15px;
+    }
+    .woocommerce-billing-fields__field-wrapper,
+    .woocommerce-shipping-fields__field-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $color_white;
+        padding: 15px 30px 30px;
+        p{
+            flex: 0 0 100%;
+            max-width: 100%;
+            float: none;
+            width: initial;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+            @include media(xs){
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            @include media(lg){
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+            }
+        }
+       
+    }
+    .woocommerce-shipping-fields{
+        .woocommerce-form__label-for-checkbox{
+            display: block;
+            font-weight: $font_weight_semi_bold;
+            span{
+                display: inline-block;
+                padding-left: 5px;
+            }
+        }
+        
+    }
+    .woocommerce-additional-fields{
+        p{
+            margin: 0;
+            
+        }
+    }
+    table{
+        &.order_details,
+        &.woocommerce-checkout-review-order-table{
+            // margin-top: 15px;
+            margin-bottom: 0;//overwrite
+            tr{
+                justify-content: space-between;
+            }
+            tbody{
+                tr{
+                    td{
+                        flex: 0 0 70%;
+                        max-width: 70%;
+                        &:last-child{
+                            text-align: right;
+                            flex: 0 0 30%;
+                            max-width: 30%;
+                        }
+                    }
+                }
+            }
+            tfoot{
+                th{
+                    border: 0;
+                    padding: 0;
+                    line-height: 1;
+                }
+                
+            }
+        }
+    }
+}

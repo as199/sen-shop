@@ -1,0 +1,227 @@
+%comment-btn{
+    display: inline-block;
+    height: 36px;
+    line-height: 34px;
+    padding: 0 30px;
+    border-radius: 3px;
+    @include border(1px,solid);
+    border-color: $secondary_color;
+    color: $secondary_color;
+    font-size: 16px;
+    &:visited{
+        color: $secondary_color;
+    }
+    &:hover{
+        background-color: $secondary_color;
+        color: $secondary_bg_text_color;
+    }
+}
+.comments-area{
+    padding: 30px;
+    font-weight: $font_weight_semi_bold;
+    margin-top: 30px;
+    background-color: $color_white;
+    cite{
+        font-style: normal;
+    }
+    .comments-title{
+      margin: 0;
+    }
+    textarea,
+    input[type=text],
+    input[type=email],
+    input[type=url]{
+        width: 100%;
+        @include border();
+        border-color: $color_light_gray;
+        padding: 10px 15px;
+    }
+    
+    #respond{
+        input{
+            &#submit{
+                display: inline-block;
+                padding: 0 30px;
+                height: 40px;
+                line-height: 36px;
+                @include border(2px,solid);
+                border-color: $secondary_color;
+                background-color: $secondary_color;
+                color: $secondary_bg_text_color;
+                @include transition();
+                font-size: 1.1rem;
+                font-weight: $font_weight_semi_bold;
+                &:visited{
+                    color: $secondary_bg_text_color;
+                }
+                &:hover{
+                    background-color: transparent;
+                    color: $secondary_color;
+                } 
+            }
+        }
+    }
+    .comment-list{
+        @extend %reset-ul;
+        li{
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include border-bottom();
+            border-color: $color_light_gray;
+            .comment-reply-link{
+               @extend %comment-btn;
+               @include transition();
+            }
+            
+            .comment-meta{
+                color: $secondary_color;
+                .comment-author{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    cite{
+                        display: inline-block;
+                        padding: 0 5px 0 15px;
+                    }
+                }
+                .comment-metadata{
+                    padding-top: 15px;
+                    a,span,time{
+                        display: inline-block;
+                        position: relative;
+                    }
+                    time,
+                    .comment-edit-link{
+                        padding-left: 25px;
+                        padding-right: 20px;
+                        &:before{
+                            @extend %fontAwesome;
+                            position: absolute;
+                            left: 5px;
+                            bottom: 0;
+                            font-size: 14px;
+                        }
+                    }
+                    time{
+                        &:before{
+                            content: '\f017';
+                        }
+                    }
+                    .comment-edit-link{
+                        &:before{
+                            content: '\f040';
+                        }
+                    }
+                }
+            }
+            .comment-content{
+                p{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    padding-left: 25px;
+                    position: relative;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &:before{
+                        @extend %fontAwesome;
+                        content: '\f086';
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .reply{
+                padding-top: 15px;
+            }
+        }
+    }
+    .comment-respond{
+        padding-top: 15px;
+        .comment-reply-title{
+            font-size: 1.3rem;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        
+        .comment-form{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                flex: 0 0 100%;
+                max-width: 100%;
+                @include media(sm){
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    padding-right: 10px;
+                }
+                &.comment-notes,
+                &.comment-form-comment,
+                &.comment-form-cookies-consent,
+                &.form-submit,
+                &.logged-in-as{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding-right: 0;
+                }
+            }
+
+            label{
+                display: block;
+                margin-bottom: 15px;
+            }
+            .comment-form-ratings{
+                display: flex;
+                flex-wrap: wrap;
+                flex: 0 0 100%;
+                max-width: 100%;
+                label{
+                    display: inline-block;
+                    margin-bottom: 0;//overwrite
+                    margin-right: 3px;
+                }
+            } 
+           
+            .comment-form-cookies-consent{
+                position: relative;
+                input{
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                }
+                label{
+                    display: inline-block;
+                    padding-left: 20px;
+                    margin-bottom: 0;
+                    text-align: justify;
+                }
+            }
+            .logged-in-as{
+                color: transparent;
+                margin-top: 0;
+                a{
+                    @extend %comment-btn;
+                    @include transition();
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 15px;
+                    @include media(sm){
+                        margin-right: 10px;
+                        width: initial;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+    
+                }
+            }
+        }
+    }
+  
+}

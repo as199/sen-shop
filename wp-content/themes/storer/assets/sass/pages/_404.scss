@@ -1,0 +1,66 @@
+.#{$prefix}-404-section{
+    padding: 45px 0 60px;
+    text-align: center;
+    @include media(lg){
+        padding: 65px 0 80px;
+    }
+    .#{$prefix}-section-wrapper{
+        @include media(lg){
+            max-width: 600px;
+            margin: auto;
+        }
+    }
+    p,
+    .page-title{
+        margin: 0;
+        padding-top: 10px;
+    }
+    .page-title{
+        color: $primary_color;
+        text-transform: capitalize;
+    }
+    p{
+        font-weight: $font_weight_semi_bold;
+    }
+    
+    .search-form{
+        @extend %clearfix;
+        padding-top: 30px;
+        @include media(sm){
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label{
+            width: calc(100% - 150px);
+            float: left;
+            input{
+                width: 100%;
+                height: 45px;
+                border-radius: 0;
+                padding: 0 15px;
+                border-color: $color_shade;
+                outline: none;
+            }
+        }
+        .search-submit{
+            width: 150px;
+            height: 45px;
+            float: left;
+            font-size: 1rem;
+            border-radius: 0;
+            border: 0;
+            cursor: pointer;
+            font-weight: $font_weight_semi_bold;
+            padding: 0;
+            background-color: $primary_color;
+            color: $primary_bg_text_color;
+            @include transition();
+            &:hover{
+                background-color: $secondary_color;
+                color: $secondary_bg_text_color;
+            }
+        }
+    
+    }
+}

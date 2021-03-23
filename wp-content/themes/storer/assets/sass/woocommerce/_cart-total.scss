@@ -1,0 +1,158 @@
+.woocommerce{
+    .#{$prefix}-cart-collaterals{
+        .#{$prefix}-cart-total{
+            .cart_totals{
+                float: none;
+                width: 100%;
+                table{
+                    margin-bottom: 0;
+                    margin-top: 15px;
+                    padding-top: 5px;
+                    td,
+                    th{
+                        border-top: 0;
+                    }
+                    tr{
+                        padding: 10px 15px 0;
+                        border-top: 0;
+                        align-items: center;
+                    }
+                    
+                    th{
+                        @include media(md){
+                            flex: 0 0 65%;
+                            max-width: 65%;
+                        }
+                    }
+                    td{
+                        @include media(md){
+                            flex: 0 0 35%;
+                            max-width: 35%;
+                            text-align: right;
+                        }
+                    }
+                    .#{$prefix}-coupon{
+                        td{
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            &:before{
+                                content: none;
+                            }
+                        }
+                        .coupon{
+                            display: flex;
+                            flex-wrap: wrap;
+                            height: 40px;
+                            align-items: center;
+                            input{
+                                flex: 0 0 calc(100% - 150px);
+                                max-width: calc(100% - 150px);
+                                padding: 0 15px;
+                                height: 40px;
+                                border-radius: 0;
+                                border-color: $color_light_gray;
+                            }
+                            button{
+                                display: block;
+                                flex: 0 0 150px;
+                                max-width: 150px;
+                                padding: 0;
+                                height: 40px;
+                                text-align: center;
+                                border-radius: 0;
+                                background-color: $secondary_color;
+                                color: $secondary_bg_text_color;
+                                border-color: $secondary_color;
+                                outline: none;
+                                &:hover{
+                                    color: $primary_bg_text_color;
+                                    background-color: $primary_color;
+                                    border-color: $primary_color;
+
+                                }
+                            }
+                        }
+                    }
+                    .woocommerce-shipping-calculator{
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+                .wc-proceed-to-checkout{
+                    padding: 15px;
+                    background-color: $color_white;
+                    line-height: 1;
+                    text-align: center;
+                    a{
+                        margin: 0;
+                        width: 100%;
+                        display: inline-block;
+                        background-color: $primary_color;
+                        color: $primary_bg_text_color;
+                        font-size: 16px;
+                        padding: 15px 30px;
+                        border-radius: 0;
+                        &:hover{
+                            background-color: $secondary_color;
+                            color: $secondary_bg_text_color;
+                            border-color: $secondary_color;
+                        }
+                    }
+                }
+            }
+        }
+        .#{$prefix}-shiping-form{
+            .#{$prefix}-shipping-list{
+                background-color: $color_white;
+                padding: 5px 15px 15px;
+            }
+            #shipping_method{
+                li{
+                    margin: 0;
+                    input{
+                        margin: 5px 5px 0 0;
+                    }
+
+                }
+            }
+            .woocommerce-shipping-destination{
+                strong{
+                    padding-left: 10px; 
+                }
+            }
+            .woocommerce-shipping-calculator{
+                .shipping-calculator-button{
+                    background-color: $primary_color;
+                    color: $primary_bg_text_color;
+                    padding: 10px 15px;
+                    line-height: 1;
+                    margin-top: 15px;
+                    &:hover{
+                        background-color: $secondary_color;
+                        color: $secondary_bg_text_color;
+                    }
+                }
+                .shipping-calculator-form{
+                    margin-top: 5px;
+                    p{
+                        margin: 0;
+                    }
+                    button{
+                        display: inline-block;
+                        background-color: $secondary_color;
+                        color: $secondary_bg_text_color;
+                        border-radius: 0;
+                        font-size: 16px;
+                        padding: 0 30px;
+                        margin-top: 10px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 0;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+    }
+}

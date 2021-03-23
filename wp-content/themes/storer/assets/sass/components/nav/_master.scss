@@ -1,0 +1,74 @@
+
+@import 'config';
+@import 'first-level';
+@import 'second-level';
+@import 'third-level';
+@import 'fourth-level';
+.desktop{
+    .#{$prefix}-nav-menu{
+        a{
+            font-weight: $font_weight_semi_bold;
+        }
+    }
+}
+.desktop ul{
+    @extend %reset-ul;
+}
+.desktop .#{$prefix}-nav-menu li.down-arrow>a{
+    padding-right: 30px;
+}
+.desktop .down-arrow>a:after,
+.desktop .right-arrow>a:after{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @extend %fontAwesome;
+    font-size: 14px;
+}
+.desktop .down-arrow>a:after{
+    content: '\f107';
+}
+.desktop .right-arrow>a:after{
+    content: '\f105';
+}
+.desktop{
+    .#{$prefix}-nav-menu{
+        .#{$prefix}-menu-description{
+            position: absolute;
+            top: -11px;
+            left: 50%;
+            @include transform(translateX(-50%));
+            &:before{
+                content: '';
+                position: absolute;
+                display: inline-block;
+                height: 0;
+                width: 0;
+                top: 100%;
+                left: 50%;
+                @include transform(translateX(-50%));
+                @include border(3px,solid);
+                border-bottom: 0;
+                border-color: transparent;
+                border-top-color: $primary_color;
+                z-index: 1;
+            }
+        }
+    }
+}
+.#{$prefix}-nav-menu{
+    .#{$prefix}-menu-description{
+        padding: 0 8px;
+        height: 18px;
+        line-height: 18px;
+        @include transition;
+        font-size: 10px;
+        background-color: $primary_color;
+        color: $primary_bg_text_color;
+        border-radius: 3px;
+       
+        
+    }
+}

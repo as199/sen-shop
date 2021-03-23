@@ -1,0 +1,54 @@
+
+@mixin animation($animation){
+    -webkit-animation:$animation;
+    -o-animation:$animation;
+    -moz-animation:$animation;
+    animation:$animation;
+}
+  
+
+@include keyframes ( #{$prefix}-entrance-bottom ){
+    0% {
+        @include transform( translateZ(-400px) translateY(400px));
+        opacity: 0;
+    }
+    100% {
+        @include transform( translateZ(0) translateY(0) );
+        opacity: 1;
+    }
+}
+
+@include keyframes ( #{$prefix}-entrance-inline ){
+    0% {
+        @include transform( translateZ(-50px) translateY(50px));
+        opacity: 0;
+    }
+    100% {
+        @include transform( translateZ(0) translateY(0) );
+        opacity: 1;
+    }
+}
+  
+@include keyframes(#{$prefix}-slide-in-top) {
+    0% {
+        @include transform(translateY(-100px));
+        opacity: 0;
+    }
+    100% {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+
+@include keyframes(#{$prefix}-rotate-center){
+    0%{
+        @include transform(rotate(0));
+    }
+    100%{
+        @include transform(rotate(360deg));
+    }
+}
+
+
+  
+  

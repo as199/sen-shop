@@ -1,0 +1,92 @@
+.woocommerce{
+    ul,
+    table{
+        &.shop_table_responsive{
+            tr:nth-child(2n){
+                td{
+                    background-color: transparent;                           
+               }
+            } 
+        }
+        &.shop_table{
+            border: 0;//overwrite
+            border-radius: 0;//overwrite
+            background-color: $color_white;
+            padding: 0 30px 10px;
+            margin: 15px 0 0;
+            thead{
+                font-size: 18px;
+                color: inherit;
+                tr{
+                    border-bottom: 1px solid $color_light_gray;
+                    border-top: 0;
+                }
+                th{
+                    border: 0;
+                    font-weight: $font-weight_semi_bold;
+                    line-height: 1;
+
+                }
+            }
+            tr{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 15px;
+                border-top: 1px solid $color_light_gray;
+                
+                td{
+                    border: 0;
+                    padding: 0;
+                    text-align: left;
+                    line-height: 1;
+                }
+            }
+            tbody{
+                td,
+                th{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                tr{
+                    &:first-child{
+                        border-top: 0;
+                    }
+                }
+            }
+            .product-thumbnail{
+                a{
+                    max-width: 100%;
+                }
+            }
+            .product-remove{
+                div{
+                    height: 100%;
+                }
+                a{
+                    position: relative;
+                    font-size: 0;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 0;
+                    &:hover{
+                        &:before{
+                            color: $secondary_color;
+                        }
+                    }
+                    &:before{
+                        content: "\f1f8";
+                        @extend %fontAwesome;
+                        display: inline-block;
+                        font-size: 18px;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+} 

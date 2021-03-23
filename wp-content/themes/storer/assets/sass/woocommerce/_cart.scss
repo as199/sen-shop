@@ -1,0 +1,126 @@
+.woocommerce{
+    table{
+        &.#{$prefix}-cart-table{
+            td{
+                text-align: left;
+            }
+            tr{
+                align-items: center;
+            }
+            .product-name,
+            .product-price,
+            .product-quantity,
+            .product-subtotal,
+            .product-remove{
+                padding-bottom: 20px;
+                &:before{
+                    font-size: 18px;
+                }
+
+            }
+            .product-thumbnail{
+                @include media(md){
+                    flex: 0 0 80px;
+                    max-width: 80px;
+                }
+                img{
+                    width: 100%;
+                }
+                a{
+                    max-width: 100%;
+                }
+            }
+            .product-name{
+                @include media(md){
+                    flex: 0 0 calc(100% - 400px);
+                    max-width: calc(100% - 400px);
+                    padding-left: 30px;
+                }
+                a{
+                    display: block;
+                    font-size: 16px;
+                    font-weight: $font-weight_semi_bold;
+                    @include media(md){
+                        margin-top:5px;
+                    }
+                } 
+                
+            }
+            .product-price{
+                @include media(md){
+                    flex: 0 0 80px;
+                    max-width: 80px;
+                }
+            }
+            .product-quantity{
+                @include media(md){
+                    flex: 0 0 110px;    
+                    max-width: 110px;
+                }
+                input{
+                    width: 60px;
+                    border-radius: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0;
+                }
+            }
+            .product-subtotal{
+                font-weight: $font_weight_semi_bold;
+                @include media(md){
+                    flex: 100px;
+                    max-width: 100px;
+                }
+            }
+            .product-remove{
+                @include media(md){
+                    flex: 0 0 30px;
+                    max-width: 30px;
+                }
+            }
+            tfoot{
+                tr{
+                    justify-content: space-between;
+                    td{
+                        &:before{
+                            content: none;
+                        }
+                    }
+                }
+                span{
+                    display: inline-block;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .#{$prefix}-icon{
+                    color: $primary_color;
+                    font-size: 18px;
+                }
+                .#{$prefix}-empty-cart{
+                    a{
+                        display: inline-block;
+                    }
+                    
+                }
+                .#{$prefix}-update-cart{
+                    margin-top: 10px;
+                    @include media(xs){
+                        margin-top: 0;
+                    }
+                    .#{$prefix}-icon{
+                        position: relative;
+                        top: 2px;
+                    }
+                    button,
+                    button:disabled{
+                        padding: 0 5px;
+                        background-color: transparent;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

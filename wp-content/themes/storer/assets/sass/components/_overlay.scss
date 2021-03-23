@@ -1,0 +1,28 @@
+.#{$prefix}-body-overlay{
+    @include transition();
+    &.show{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba($color_black,0.7);
+        z-index: 10;
+    }
+
+}
+.#{$prefix}-overlay{
+    position: relative;
+    @extend %perspective;
+    &:before{
+        content:'';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        position: absolute;
+        display: block;
+        background-color: rgba($color_black,0.63);
+    }
+}

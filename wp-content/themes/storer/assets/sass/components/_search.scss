@@ -1,0 +1,61 @@
+.#{$prefix}-search-field{
+    .#{$prefix}-search-input-field{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 0px;
+        .#{$prefix}-selected-category{
+            background-color: $color_shade;
+            padding: 0 15px;
+        }
+    }
+    select,
+    button,
+    input{
+        height: 40px;
+        outline: none;
+    }
+    input{
+        padding: 0 15px 3px;
+        outline: 0;
+        width: 100%;
+        border-radius: 0;
+        &:focus{
+            box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+            border: 1px solid rgba(81, 203, 238, 1)
+        }
+    }
+    div.#{$prefix}-select2-dropdown{
+        .select2-choice,
+        .select2-selection{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    button[type=submit]{
+        background-color: $secondary_color;
+        color: $secondary_bg_text_color;
+        border-color: $secondary_color;
+        font-size: 16px;
+        padding: 0;
+        width: 50px;
+        cursor: pointer;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        i{
+            position: relative;
+            top: -1px;
+        }
+        &:visited{
+            color: $secondary_bg_text_color;
+        }
+        &:hover,
+        &:focus{
+            background-color: $primary_color;
+            color: $primary_bg_text_color;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.#{$prefix}-menu-icon{
+    cursor: pointer;
+    width: 60px;
+    span{
+        display: block;
+        position: relative;
+        height: 4px;
+        margin-top: 4px;
+        &:before,
+        &:after{
+            position: absolute;
+            content: '';
+            background-color: $header_bg_text_color;
+            display: block;
+           
+        }
+        &:after{
+            height: 4px;
+            width: 4px;
+            right: 0;
+        }
+        &:before{
+            height: 2px;
+            right: 10px;
+            top: 50%;
+            @include transform(translateY(-50%));
+            @include transition(width,0.2s,ease);
+
+        }
+        // &:first-child,
+        // &:last-child,
+        // &:nth-child(2),
+        // &:nth-child(3){
+        // }
+
+        &:first-child,
+        &:last-child{
+            &:before{
+                width: 50px;
+            }
+        }
+        &:nth-child(2){
+            &:before{
+                width: 35px;
+            }
+        }
+        &:nth-child(3){
+            &:before{
+                width: 30px;
+            }
+        }
+        
+    }
+    
+    &:hover{
+        span{
+            &:first-child{
+                &:before{
+                    width: 40px;
+                }
+            }
+            &:nth-child(2){
+                &:before{
+                    width: 50px;
+                }
+            }
+            &:nth-child(3){
+                &:before{
+                    width: 45px;
+                }
+            }
+            &:last-child{
+                &:before{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+}

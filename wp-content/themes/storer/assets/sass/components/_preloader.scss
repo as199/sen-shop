@@ -1,0 +1,66 @@
+
+@keyframes cir_one {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+}
+
+
+@keyframes cir_two {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+}
+
+
+@keyframes cir_three {
+    75% {
+        transform: scale(0);
+        -webkit-transform: scale(0)
+    }
+}
+  
+.#{$prefix}-preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: $header_color;
+    color: $header_bg_text_color; 
+    left: 0;
+    top: 0;
+    z-index: 10;
+    .#{$prefix}-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%,-50%));
+        text-align: center;
+    }
+    .#{$prefix}-icon{
+        font-size: 80px;
+    }
+    .#{$prefix}-circle{
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        display: inline-block;
+        border-radius: 100%;
+        background-color: $header_bg_text_color;
+    }
+
+    .#{$prefix}-circle-1{
+        animation: cir_one 1.5s infinite;
+    }
+
+    .#{$prefix}-circle-2{
+        animation: cir_two 1.5s infinite;
+        animation-delay: .25s;
+    }
+
+    .#{$prefix}-circle-3{
+        animation: cir_three 1.5s infinite;
+        animation-delay: .5s;
+    }
+}

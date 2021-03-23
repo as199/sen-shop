@@ -1,0 +1,119 @@
+.#{$prefix}-header{
+    background-color: $header_color;
+    color: $header_bg_text_color;
+    a,
+    button{
+        color: $header_bg_text_color;
+        &:visited{
+            color: $header_bg_text_color;
+        }
+        &:hover,
+        &:focus{
+            color: $primary_color;
+        }
+    }
+    .#{$prefix}-feature{
+        &:hover,
+        &:focus{
+            color: $primary_color;
+        }
+    }
+}
+.#{$prefix}-site-branding{
+    padding: 30px 15px;
+    @include transition();
+    background-color: transparent;
+    &.sticky{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: $header_color;
+        @include animation( #{$prefix}-slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both);
+    }
+    @include media(lg){
+        padding: 10px 30px;
+    }
+    .#{$prefix}-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .#{$prefix}-logo{
+        flex: 0 0 120px;
+        max-width: 120px;
+        padding-right: 15px;
+        .site-title,
+        .site-description{
+            margin: 0;
+        }
+        @include media(xs){
+            flex: 0 0 150px;
+            max-width: 150px;
+            padding-right: 15px;
+        }
+        @include media(sm){
+            flex: 0 0 200px;
+            max-width: 200px;
+        }
+        @include media(lg){
+            flex: 0 0 260px;
+            max-width: 260px;
+        }
+        
+    }
+    
+    .#{$prefix}-search-field{
+        flex: 0 0 calc(100% - 120px);
+        max-width: calc(100% - 120px);
+        @include media(xs){
+            flex: 0 0 calc(100% - 400px);
+            max-width: calc(100% - 400px);
+        }
+
+        @include media(sm){
+            flex: 0 0 calc(100% - 450px);
+            max-width: calc(100% - 450px);
+            padding: 20px 15px 0;
+        }
+        @include media(lg){
+            flex: 0 0 calc(100% - 510px);
+            max-width: calc(100% - 510px);
+            padding-left: 30px;
+        }
+        .#{$prefix}-search-dropdown{
+            display: none;
+            @include media(md){
+                display: initial;
+            }
+        }
+        input{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            @include media(md){
+                border-radius: 0;
+            }
+        }
+    }
+    .#{$prefix}-site-feature{
+        justify-content: center;
+        margin-top: 30px;
+        flex:  0 0 100%;
+        max-width: 100%;
+        @include media(xs){
+            justify-content: flex-end;
+            margin-top: 0;
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+    }
+}
+.admin-bar{
+    .#{$prefix}-site-branding{
+        &.sticky{
+            top: 30px;
+        }
+    }
+}

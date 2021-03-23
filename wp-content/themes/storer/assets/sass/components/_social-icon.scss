@@ -1,0 +1,89 @@
+
+
+$social_icon: (
+    twitter:    (content: "\f099", color: #1ca0fe),
+    facebook:   (content: "\f09a",color: #3b5999),
+    dribbble :  (content:"\f22d",color: #ea4c89),
+    linkedin :  ( content: "\f0e1",color: #0177b5),
+    instagram:  (content: "\f16d",color:#E1306c),
+    youtube:    (content: "\f167",color: #ff0000),
+    vimeo:      (content: "\f245",color: #1ab7ea),
+    wordpress:  (content: "\f19a",color: #0074aa),
+    pinterest: (content: "\f0d2",color: #bd071c),
+    tumblr: (content: "\f173",color:#3e5a70),
+    whatsapp: (content: "\f232",color: #00e676),
+    reddit : (content: "\f1a1",color: #ff4500),
+    vk: (content: "\f189",color: #4a76a8)
+);
+
+ul{
+    &.#{$prefix}-social-menu{
+        @extend %reset-ul;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                font-size: 0;
+                &:before{ 
+                    display: block;
+                    @extend %fontAwesome;
+                    font-size: 18px;
+                }
+                @each $social,$icon in $social_icon{
+                    &[href*="#{$social}"] {
+                        &:before {
+                            content: map-get($icon, content);
+                        }
+                    }
+                    &:hover{
+                        &[href*="#{$social}"] {
+                            background-color: map-get($icon, color);
+                            color: $color_white;
+            
+                            &:before {
+                                color: $color_white;
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+        &.#{$prefix}-social-menu-with-bg{
+            li{
+                a{
+                    @each $social,$icon in $social_icon{
+                        &[href*="#{$social}"] {
+                            background-color: map-get($icon, color);
+                            color: $color_white;
+            
+                            &:before {
+                                color: $color_white;
+                            }
+                        }
+                        &:hover,
+                        &:focus{
+                            &[href*="#{$social}"] {
+                                background-color: darken(map-get($icon, color),10%);
+                            }
+
+                        }
+                    }
+                    &[href*="instagram"]{
+                        background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                        &:hover{
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                
+    
+            }
+
+        }
+        
+    }
+    
+}

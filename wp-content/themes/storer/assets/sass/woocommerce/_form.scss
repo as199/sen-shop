@@ -1,0 +1,57 @@
+.#{$prefix}-shiping-form,
+.woocommerce-checkout{
+    form{
+        .form-row{
+            input{
+                &.input-text{
+                    margin-top: 15px;
+                }
+            }
+            label{
+                margin-top: 15px;   
+                line-height: 1;
+                font-size: 16px;
+                font-weight: $font_weight_semi_bold;
+                color: $text_color;
+            }
+            textarea{
+                height: 200px;
+                padding: 10px 15px;
+                margin-top: 15px;
+                border-radius: 0;
+                border-color: $color_light_gray;
+                line-height: 1;
+            }
+        }
+
+    }
+    .woocommerce-shipping-calculator,
+    .woocommerce-billing-fields__field-wrapper,
+    .woocommerce-shipping-fields__field-wrapper{
+        input{
+            display: inline-block;
+            width: 100%;
+            padding: 10px 15px;
+            font-family: inherit;
+            color: inherit;
+            border-radius: 0;
+            border-color: $color_light_gray;
+            font-size: 16px;
+        }
+        .select2-container--default .select2-selection--single{
+            height: auto;
+            line-height: 1;
+            padding: 7px 15px;
+            border-radius: 0;
+            border-color: $color_light_gray;
+            margin-top: 15px;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow{
+            height: 100%;
+            right: 5px;
+            top: 8px;
+        }
+    }
+
+    
+}

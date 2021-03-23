@@ -1,0 +1,60 @@
+html{
+    &.#{$prefix}-m-0{
+        margin-top: 0 !important;
+    }
+}
+body{
+    color: $text_color;
+    font-family: $root_font;
+    font-size: 15px;
+    background-color: rgba(234, 239, 242, 0.42);
+    font-weight: $font_weight_normal;
+    &.admin-bar{
+        margin-top: 30px;
+    }
+}
+a{
+    text-decoration: none;
+    color: $text_color;
+    @include transition();
+    &:visited{
+        color: $text_color; 
+    }
+    &:hover{
+        color: $primary_color;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Hind";
+}
+.#{$prefix}-section-title,
+.#{$prefix}-page-title{
+    font-size: 22px;
+    @include media(xs){
+        font-size: 30px;
+    }
+    @include media(sm){
+        font-size: 35px;
+    }
+}
+
+.#{$prefix}-post-title{
+    font-size: 18px;
+}
+.#{$prefix}-post-title-sm{
+    font-size: 14px;
+    font-weight: 400;
+}
+.#{$prefix}-post-title-md{
+    font-size: 20px;
+    color: $color_black;
+    @include media(sm){
+        font-size: 22px;
+    }
+    a{
+        color: inherit;
+        &:hover{
+            color: $primary_color;
+        }
+    }
+}

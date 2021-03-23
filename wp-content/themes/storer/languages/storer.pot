@@ -1,0 +1,1359 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-10-20 07:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: _s\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: functions.php:49
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:50
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:51
+msgid "Footer Menu"
+msgstr ""
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#. %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:76
+msgid "menu"
+msgstr ""
+
+#: header.php:89
+msgid "Featured category"
+msgstr ""
+
+#: footer.php:48
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. %s: CMS name, i.e. WordPress.
+#: footer.php:51
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. 1: Theme name, 2: Theme author.
+#: footer.php:57
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: single.php:24
+msgid "Previous Post"
+msgstr ""
+
+#: single.php:25
+msgid "Next Post"
+msgstr ""
+
+#: inc/woocommerce.php:326
+msgid "View your shopping cart"
+msgstr ""
+
+#. number of items in the mini cart.
+#: inc/woocommerce.php:330
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/woocommerce.php:357
+msgid "Cart"
+msgstr ""
+
+#: inc/woocommerce.php:414
+msgid "Login"
+msgstr ""
+
+#: inc/woocommerce.php:416
+msgid "Login/Register"
+msgstr ""
+
+#: inc/woocommerce.php:429
+msgid "Profile"
+msgstr ""
+
+#: inc/woocommerce.php:449
+msgid "My Orders"
+msgstr ""
+
+#: inc/woocommerce.php:455
+msgid "Edit Account"
+msgstr ""
+
+#: inc/woocommerce.php:461
+msgid "Logout"
+msgstr ""
+
+#: inc/woocommerce.php:507
+msgid "Wishlist"
+msgstr ""
+
+#: inc/woocommerce.php:546
+#, php-format
+msgid "%s has been added to your wishist."
+msgstr ""
+
+#: inc/woocommerce.php:552
+msgid "WishList Items"
+msgstr ""
+
+#: inc/woocommerce.php:564
+msgid "View Wishlist"
+msgstr ""
+
+#: inc/custom-function.php:55
+msgid "Search for:"
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:78
+msgid ", "
+msgstr ""
+
+#. 1: list of categories.
+#. 1: list of tags.
+#: inc/template-tags.php:81 inc/template-tags.php:88
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:85
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:98
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:115 template-parts/content-page.php:39
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-single.php:53 template-parts/content-page.php:25
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: woocommerce/cart/cart.php:29 woocommerce/cart/cart.php:61
+msgid "Product"
+msgstr ""
+
+#: woocommerce/cart/cart.php:30 woocommerce/cart/cart.php:81
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:31 woocommerce/cart/cart.php:87
+#: woocommerce/global/quantity-input.php:28
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:105
+#: woocommerce/cart/cart-totals.php:86 woocommerce/cart/cart-totals.php:87
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:76
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:117
+msgid "Remove this item"
+msgstr ""
+
+#: woocommerce/cart/cart.php:140
+msgid "Empty Shopping Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:147
+msgid "Update cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:163 woocommerce/cart/cart.php:176
+#: woocommerce/cart/cart.php:177
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:27
+msgid "Cart totals"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:34
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:34
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:42 woocommerce/cart/cart-totals.php:43
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:64
+#, php-format
+msgid "(estimated for %s)"
+msgstr ""
+
+#. %s: Quantity.
+#: woocommerce/global/quantity-input.php:28
+#, php-format
+msgid "%s quantity"
+msgstr ""
+
+#: woocommerce/global/quantity-input.php:42
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr ""
+
+#: inc/customizer/customizer.php:54
+msgid "Storer Pro"
+msgstr ""
+
+#: inc/customizer/customizer.php:55
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:12
+msgid "woocommerce Global Options"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:30
+msgid "Content Alignment"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:34
+msgid "Content - Store Sidebar"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:35
+msgid "Store Sidebar - Content"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:36
+msgid "Full Width Content"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:53
+msgid "Enable Breadcrumbs"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:57
+#: inc/customizer/woocommerce-option.php:147
+#: inc/customizer/woocommerce-option.php:170
+#: inc/customizer/homepage-options.php:209
+#: inc/customizer/homepage-options.php:230
+msgid "Yes"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:58
+#: inc/customizer/woocommerce-option.php:148
+#: inc/customizer/woocommerce-option.php:171
+#: inc/customizer/homepage-options.php:210
+#: inc/customizer/homepage-options.php:231
+msgid "No"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:72
+msgid "Shop Page"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:91
+msgid "Shop Product Columns"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:95
+#: inc/customizer/woocommerce-option.php:192
+#: inc/widgets/sidebar-register.php:61
+msgid "Two"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:96
+#: inc/customizer/woocommerce-option.php:193
+#: inc/widgets/sidebar-register.php:62
+msgid "Three"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:97
+#: inc/customizer/woocommerce-option.php:194
+msgid "Four"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:98
+#: inc/customizer/woocommerce-option.php:195
+msgid "Five"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:114
+msgid "Products per Page"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:125
+msgid "Product Page"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:143
+msgid "Enable Product Zoom"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:166
+msgid "Show Related Products"
+msgstr ""
+
+#: inc/customizer/woocommerce-option.php:188
+msgid "Related Products per Rows"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:12
+msgid "General Settings Options"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:20
+msgid "HomePage Section Settings"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:29
+msgid "Full Width Slider Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:45
+msgid "Enable Full Width Slider"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:65
+msgid "Select Page - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:81
+msgid "Caption Position - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:85
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:86
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:87
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:96
+msgid "Shop Now"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:102
+msgid "Button Text - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:118
+msgid "Button Link - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:132
+msgid "Featured Product Categories"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:150
+msgid "Enable Featured Category Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:167
+msgid "Featured Category Section Title"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:185
+msgid "Product Category - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:205
+msgid "Show Product Count"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:226
+msgid "Show On-sale Product Count"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:241
+msgid "Featured Products"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:257
+msgid "Enable Featured Product Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:275
+msgid "Featured Product Section Title"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:292
+msgid "Featured Product Button Title"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:308
+msgid "Featured Product Button URL"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:325
+#: inc/customizer/homepage-options.php:386
+msgid "Select Featured Product Categories"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:336
+#: inc/customizer/core/default-value.php:41
+msgid "Latest Blog"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:352
+msgid "Enable Latest Blog Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:370
+msgid "Latest Blog Section Title"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:397
+msgid "Store Features"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:415
+msgid "Enable Features Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:439
+msgid "Set Features "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:455
+msgid "Feature Title"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:471
+msgid "Feature icon (Font Awesome)"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:486
+msgid "Feature descriptions"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:500
+msgid "Store Advertise Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:518
+msgid "Enable Advertise Section"
+msgstr ""
+
+#: inc/customizer/homepage-options.php:537
+msgid "Upload Advertise Image - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:552
+msgid "Advertise Section Title - "
+msgstr ""
+
+#: inc/customizer/homepage-options.php:569
+msgid "Advertise Link - "
+msgstr ""
+
+#: inc/hooks/featured-category.php:72
+#, php-format
+msgid ""
+"<span class=\"twp-item-count\">%s</span><span class=\"twp-item-texts\">"
+"item</span>"
+msgid_plural ""
+"<span class=\"twp-item-count\">%s</span><span class=\"twp-item-texts\">"
+"items</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/grid-product.php:45
+msgid "Displays post form selected category on grid style."
+msgstr ""
+
+#: inc/widgets/grid-product.php:51 inc/widgets/product-carousel.php:51
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/grid-product.php:56 inc/widgets/product-carousel.php:56
+msgid "Product Category:"
+msgstr ""
+
+#: inc/widgets/grid-product.php:60 inc/widgets/product-carousel.php:60
+msgid "Product Shorting:"
+msgstr ""
+
+#: inc/widgets/grid-product.php:63 inc/widgets/product-carousel.php:63
+msgid "Latest Product"
+msgstr ""
+
+#: inc/widgets/grid-product.php:64 inc/widgets/product-carousel.php:64
+msgid "Best Sellers"
+msgstr ""
+
+#: inc/widgets/grid-product.php:65 inc/widgets/product-carousel.php:65
+msgid "Best Deals"
+msgstr ""
+
+#: inc/widgets/grid-product.php:69 inc/widgets/product-carousel.php:69
+msgid "Number of Products:"
+msgstr ""
+
+#: inc/widgets/grid-product.php:78
+msgid "TWP: Grid Product Style"
+msgstr ""
+
+#: inc/widgets/widget-base.php:249
+msgid "Upload"
+msgstr ""
+
+#: inc/widgets/widget-base.php:249
+msgid "Select Image"
+msgstr ""
+
+#: inc/widgets/widget-base.php:249
+msgid "Choose Image"
+msgstr ""
+
+#: inc/widgets/widget-base.php:260
+msgctxt "Remove"
+msgid "X"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:12 inc/widgets/sidebar-register.php:67
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:22
+msgid "Off-Canvas Sidebar"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:24 inc/widgets/sidebar-register.php:36
+msgid "Add widgets for offcanvas-sidebar."
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:34
+msgid "Front Page Fullwidth Sidebar"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:46
+msgid "Shop Sidebar"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:48
+msgid "Add widgets to shop sidebar section."
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:60
+msgid "One"
+msgstr ""
+
+#: inc/widgets/sidebar-register.php:65
+msgid "Footer Widget "
+msgstr ""
+
+#: inc/widgets/product-carousel.php:45
+msgid "Displays post form selected category on carousel style."
+msgstr ""
+
+#: inc/widgets/product-carousel.php:78
+msgid "TWP: carousel Product Style"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:22
+msgid "Search Products..."
+msgstr ""
+
+#: inc/customizer/core/default-value.php:23
+msgid "All Categories"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:35
+msgid "Featured Product"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:36
+msgid "View All"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:45
+msgid "Free Shipping"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:46
+msgid "24/7 Support"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:47
+msgid "Best Offer"
+msgstr ""
+
+#: inc/customizer/core/default-value.php:48
+msgid "Secure Payment"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:103
+#: inc/customizer/typography/classes-font.php:193
+#: inc/customizer/typography/classes-font.php:250
+#: inc/customizer/typography/classes-font.php:279
+#: inc/customizer/typography/classes-font.php:316
+#: inc/customizer/typography/classes-font.php:337
+#: inc/customizer/typography/classes-font.php:364
+#: inc/customizer/typography/classes-font.php:391
+#: inc/customizer/typography/classes-font.php:410
+#: inc/customizer/typography/classes-font.php:439
+#: inc/customizer/typography/classes-font.php:540
+#: inc/customizer/typography/classes-font.php:569
+#: inc/customizer/typography/classes-font.php:699
+#: inc/customizer/typography/classes-font.php:842
+#: inc/customizer/typography/classes-font.php:873
+#: inc/customizer/typography/classes-font.php:895
+#: inc/customizer/typography/classes-font.php:1038
+#: inc/customizer/typography/classes-font.php:1113
+msgid "Thin 100"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:104
+#: inc/customizer/typography/classes-font.php:251
+#: inc/customizer/typography/classes-font.php:280
+#: inc/customizer/typography/classes-font.php:338
+#: inc/customizer/typography/classes-font.php:365
+#: inc/customizer/typography/classes-font.php:392
+#: inc/customizer/typography/classes-font.php:411
+#: inc/customizer/typography/classes-font.php:440
+#: inc/customizer/typography/classes-font.php:541
+#: inc/customizer/typography/classes-font.php:570
+#: inc/customizer/typography/classes-font.php:700
+#: inc/customizer/typography/classes-font.php:843
+#: inc/customizer/typography/classes-font.php:896
+#: inc/customizer/typography/classes-font.php:1114
+msgid "Thin 100 Italic "
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:105
+#: inc/customizer/typography/classes-font.php:195
+#: inc/customizer/typography/classes-font.php:254
+#: inc/customizer/typography/classes-font.php:283
+#: inc/customizer/typography/classes-font.php:317
+#: inc/customizer/typography/classes-font.php:341
+#: inc/customizer/typography/classes-font.php:368
+#: inc/customizer/typography/classes-font.php:393
+#: inc/customizer/typography/classes-font.php:412
+#: inc/customizer/typography/classes-font.php:443
+#: inc/customizer/typography/classes-font.php:505
+#: inc/customizer/typography/classes-font.php:521
+#: inc/customizer/typography/classes-font.php:544
+#: inc/customizer/typography/classes-font.php:573
+#: inc/customizer/typography/classes-font.php:597
+#: inc/customizer/typography/classes-font.php:630
+#: inc/customizer/typography/classes-font.php:653
+#: inc/customizer/typography/classes-font.php:676
+#: inc/customizer/typography/classes-font.php:703
+#: inc/customizer/typography/classes-font.php:823
+#: inc/customizer/typography/classes-font.php:846
+#: inc/customizer/typography/classes-font.php:875
+#: inc/customizer/typography/classes-font.php:897
+#: inc/customizer/typography/classes-font.php:920
+#: inc/customizer/typography/classes-font.php:943
+#: inc/customizer/typography/classes-font.php:979
+#: inc/customizer/typography/classes-font.php:996
+#: inc/customizer/typography/classes-font.php:1040
+#: inc/customizer/typography/classes-font.php:1115
+#: inc/customizer/typography/classes-font.php:1193
+#: inc/customizer/typography/classes-font.php:1209
+msgid "Light 300"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:106
+#: inc/customizer/typography/classes-font.php:255
+#: inc/customizer/typography/classes-font.php:284
+#: inc/customizer/typography/classes-font.php:342
+#: inc/customizer/typography/classes-font.php:369
+#: inc/customizer/typography/classes-font.php:394
+#: inc/customizer/typography/classes-font.php:413
+#: inc/customizer/typography/classes-font.php:444
+#: inc/customizer/typography/classes-font.php:506
+#: inc/customizer/typography/classes-font.php:522
+#: inc/customizer/typography/classes-font.php:545
+#: inc/customizer/typography/classes-font.php:574
+#: inc/customizer/typography/classes-font.php:631
+#: inc/customizer/typography/classes-font.php:654
+#: inc/customizer/typography/classes-font.php:677
+#: inc/customizer/typography/classes-font.php:704
+#: inc/customizer/typography/classes-font.php:824
+#: inc/customizer/typography/classes-font.php:847
+#: inc/customizer/typography/classes-font.php:898
+#: inc/customizer/typography/classes-font.php:921
+#: inc/customizer/typography/classes-font.php:944
+#: inc/customizer/typography/classes-font.php:980
+#: inc/customizer/typography/classes-font.php:997
+#: inc/customizer/typography/classes-font.php:1116
+#: inc/customizer/typography/classes-font.php:1210
+msgid "Light 300 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:107
+#: inc/customizer/typography/classes-font.php:130
+#: inc/customizer/typography/classes-font.php:153
+#: inc/customizer/typography/classes-font.php:176
+#: inc/customizer/typography/classes-font.php:196
+#: inc/customizer/typography/classes-font.php:211
+#: inc/customizer/typography/classes-font.php:225
+#: inc/customizer/typography/classes-font.php:256
+#: inc/customizer/typography/classes-font.php:285
+#: inc/customizer/typography/classes-font.php:318
+#: inc/customizer/typography/classes-font.php:343
+#: inc/customizer/typography/classes-font.php:370
+#: inc/customizer/typography/classes-font.php:395
+#: inc/customizer/typography/classes-font.php:414
+#: inc/customizer/typography/classes-font.php:428
+#: inc/customizer/typography/classes-font.php:445
+#: inc/customizer/typography/classes-font.php:465
+#: inc/customizer/typography/classes-font.php:490
+#: inc/customizer/typography/classes-font.php:507
+#: inc/customizer/typography/classes-font.php:523
+#: inc/customizer/typography/classes-font.php:546
+#: inc/customizer/typography/classes-font.php:575
+#: inc/customizer/typography/classes-font.php:598
+#: inc/customizer/typography/classes-font.php:610
+#: inc/customizer/typography/classes-font.php:632
+#: inc/customizer/typography/classes-font.php:655
+#: inc/customizer/typography/classes-font.php:678
+#: inc/customizer/typography/classes-font.php:705
+#: inc/customizer/typography/classes-font.php:726
+#: inc/customizer/typography/classes-font.php:739
+#: inc/customizer/typography/classes-font.php:753
+#: inc/customizer/typography/classes-font.php:765
+#: inc/customizer/typography/classes-font.php:779
+#: inc/customizer/typography/classes-font.php:801
+#: inc/customizer/typography/classes-font.php:813
+#: inc/customizer/typography/classes-font.php:825
+#: inc/customizer/typography/classes-font.php:848
+#: inc/customizer/typography/classes-font.php:876
+#: inc/customizer/typography/classes-font.php:899
+#: inc/customizer/typography/classes-font.php:922
+#: inc/customizer/typography/classes-font.php:945
+#: inc/customizer/typography/classes-font.php:966
+#: inc/customizer/typography/classes-font.php:981
+#: inc/customizer/typography/classes-font.php:998
+#: inc/customizer/typography/classes-font.php:1017
+#: inc/customizer/typography/classes-font.php:1041
+#: inc/customizer/typography/classes-font.php:1055
+#: inc/customizer/typography/classes-font.php:1064
+#: inc/customizer/typography/classes-font.php:1074
+#: inc/customizer/typography/classes-font.php:1085
+#: inc/customizer/typography/classes-font.php:1094
+#: inc/customizer/typography/classes-font.php:1104
+#: inc/customizer/typography/classes-font.php:1117
+#: inc/customizer/typography/classes-font.php:1130
+#: inc/customizer/typography/classes-font.php:1138
+#: inc/customizer/typography/classes-font.php:1154
+#: inc/customizer/typography/classes-font.php:1176
+#: inc/customizer/typography/classes-font.php:1184
+#: inc/customizer/typography/classes-font.php:1194
+#: inc/customizer/typography/classes-font.php:1211
+msgid "Regular 400"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:108
+#: inc/customizer/typography/classes-font.php:131
+#: inc/customizer/typography/classes-font.php:154
+#: inc/customizer/typography/classes-font.php:177
+#: inc/customizer/typography/classes-font.php:212
+#: inc/customizer/typography/classes-font.php:226
+#: inc/customizer/typography/classes-font.php:257
+#: inc/customizer/typography/classes-font.php:286
+#: inc/customizer/typography/classes-font.php:344
+#: inc/customizer/typography/classes-font.php:371
+#: inc/customizer/typography/classes-font.php:396
+#: inc/customizer/typography/classes-font.php:415
+#: inc/customizer/typography/classes-font.php:429
+#: inc/customizer/typography/classes-font.php:446
+#: inc/customizer/typography/classes-font.php:466
+#: inc/customizer/typography/classes-font.php:491
+#: inc/customizer/typography/classes-font.php:508
+#: inc/customizer/typography/classes-font.php:524
+#: inc/customizer/typography/classes-font.php:547
+#: inc/customizer/typography/classes-font.php:576
+#: inc/customizer/typography/classes-font.php:599
+#: inc/customizer/typography/classes-font.php:611
+#: inc/customizer/typography/classes-font.php:633
+#: inc/customizer/typography/classes-font.php:656
+#: inc/customizer/typography/classes-font.php:679
+#: inc/customizer/typography/classes-font.php:706
+#: inc/customizer/typography/classes-font.php:740
+#: inc/customizer/typography/classes-font.php:754
+#: inc/customizer/typography/classes-font.php:766
+#: inc/customizer/typography/classes-font.php:780
+#: inc/customizer/typography/classes-font.php:802
+#: inc/customizer/typography/classes-font.php:826
+#: inc/customizer/typography/classes-font.php:849
+#: inc/customizer/typography/classes-font.php:900
+#: inc/customizer/typography/classes-font.php:923
+#: inc/customizer/typography/classes-font.php:946
+#: inc/customizer/typography/classes-font.php:982
+#: inc/customizer/typography/classes-font.php:999
+#: inc/customizer/typography/classes-font.php:1018
+#: inc/customizer/typography/classes-font.php:1075
+#: inc/customizer/typography/classes-font.php:1118
+#: inc/customizer/typography/classes-font.php:1139
+#: inc/customizer/typography/classes-font.php:1155
+#: inc/customizer/typography/classes-font.php:1212
+msgid "Regular 400 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:109
+#: inc/customizer/typography/classes-font.php:132
+#: inc/customizer/typography/classes-font.php:155
+#: inc/customizer/typography/classes-font.php:178
+#: inc/customizer/typography/classes-font.php:197
+#: inc/customizer/typography/classes-font.php:213
+#: inc/customizer/typography/classes-font.php:227
+#: inc/customizer/typography/classes-font.php:258
+#: inc/customizer/typography/classes-font.php:287
+#: inc/customizer/typography/classes-font.php:319
+#: inc/customizer/typography/classes-font.php:345
+#: inc/customizer/typography/classes-font.php:372
+#: inc/customizer/typography/classes-font.php:447
+#: inc/customizer/typography/classes-font.php:467
+#: inc/customizer/typography/classes-font.php:548
+#: inc/customizer/typography/classes-font.php:577
+#: inc/customizer/typography/classes-font.php:707
+#: inc/customizer/typography/classes-font.php:781
+#: inc/customizer/typography/classes-font.php:850
+#: inc/customizer/typography/classes-font.php:877
+#: inc/customizer/typography/classes-font.php:901
+#: inc/customizer/typography/classes-font.php:924
+#: inc/customizer/typography/classes-font.php:1000
+#: inc/customizer/typography/classes-font.php:1042
+#: inc/customizer/typography/classes-font.php:1156
+#: inc/customizer/typography/classes-font.php:1195
+#: inc/customizer/typography/classes-font.php:1213
+msgid "Medium 500"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:110
+#: inc/customizer/typography/classes-font.php:133
+#: inc/customizer/typography/classes-font.php:156
+#: inc/customizer/typography/classes-font.php:179
+#: inc/customizer/typography/classes-font.php:214
+#: inc/customizer/typography/classes-font.php:228
+#: inc/customizer/typography/classes-font.php:259
+#: inc/customizer/typography/classes-font.php:288
+#: inc/customizer/typography/classes-font.php:346
+#: inc/customizer/typography/classes-font.php:373
+#: inc/customizer/typography/classes-font.php:448
+#: inc/customizer/typography/classes-font.php:468
+#: inc/customizer/typography/classes-font.php:549
+#: inc/customizer/typography/classes-font.php:578
+#: inc/customizer/typography/classes-font.php:708
+#: inc/customizer/typography/classes-font.php:782
+#: inc/customizer/typography/classes-font.php:851
+#: inc/customizer/typography/classes-font.php:902
+#: inc/customizer/typography/classes-font.php:925
+#: inc/customizer/typography/classes-font.php:1001
+#: inc/customizer/typography/classes-font.php:1157
+#: inc/customizer/typography/classes-font.php:1214
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:111
+#: inc/customizer/typography/classes-font.php:134
+#: inc/customizer/typography/classes-font.php:159
+#: inc/customizer/typography/classes-font.php:182
+#: inc/customizer/typography/classes-font.php:199
+#: inc/customizer/typography/classes-font.php:215
+#: inc/customizer/typography/classes-font.php:231
+#: inc/customizer/typography/classes-font.php:262
+#: inc/customizer/typography/classes-font.php:291
+#: inc/customizer/typography/classes-font.php:320
+#: inc/customizer/typography/classes-font.php:349
+#: inc/customizer/typography/classes-font.php:376
+#: inc/customizer/typography/classes-font.php:399
+#: inc/customizer/typography/classes-font.php:416
+#: inc/customizer/typography/classes-font.php:430
+#: inc/customizer/typography/classes-font.php:451
+#: inc/customizer/typography/classes-font.php:471
+#: inc/customizer/typography/classes-font.php:492
+#: inc/customizer/typography/classes-font.php:509
+#: inc/customizer/typography/classes-font.php:525
+#: inc/customizer/typography/classes-font.php:552
+#: inc/customizer/typography/classes-font.php:581
+#: inc/customizer/typography/classes-font.php:600
+#: inc/customizer/typography/classes-font.php:612
+#: inc/customizer/typography/classes-font.php:636
+#: inc/customizer/typography/classes-font.php:659
+#: inc/customizer/typography/classes-font.php:682
+#: inc/customizer/typography/classes-font.php:711
+#: inc/customizer/typography/classes-font.php:727
+#: inc/customizer/typography/classes-font.php:741
+#: inc/customizer/typography/classes-font.php:767
+#: inc/customizer/typography/classes-font.php:785
+#: inc/customizer/typography/classes-font.php:803
+#: inc/customizer/typography/classes-font.php:814
+#: inc/customizer/typography/classes-font.php:827
+#: inc/customizer/typography/classes-font.php:854
+#: inc/customizer/typography/classes-font.php:879
+#: inc/customizer/typography/classes-font.php:903
+#: inc/customizer/typography/classes-font.php:926
+#: inc/customizer/typography/classes-font.php:949
+#: inc/customizer/typography/classes-font.php:968
+#: inc/customizer/typography/classes-font.php:985
+#: inc/customizer/typography/classes-font.php:1002
+#: inc/customizer/typography/classes-font.php:1021
+#: inc/customizer/typography/classes-font.php:1044
+#: inc/customizer/typography/classes-font.php:1076
+#: inc/customizer/typography/classes-font.php:1095
+#: inc/customizer/typography/classes-font.php:1121
+#: inc/customizer/typography/classes-font.php:1140
+#: inc/customizer/typography/classes-font.php:1160
+#: inc/customizer/typography/classes-font.php:1197
+#: inc/customizer/typography/classes-font.php:1217
+msgid "Bold 700"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:112
+#: inc/customizer/typography/classes-font.php:135
+#: inc/customizer/typography/classes-font.php:160
+#: inc/customizer/typography/classes-font.php:183
+#: inc/customizer/typography/classes-font.php:216
+#: inc/customizer/typography/classes-font.php:232
+#: inc/customizer/typography/classes-font.php:263
+#: inc/customizer/typography/classes-font.php:292
+#: inc/customizer/typography/classes-font.php:350
+#: inc/customizer/typography/classes-font.php:377
+#: inc/customizer/typography/classes-font.php:400
+#: inc/customizer/typography/classes-font.php:417
+#: inc/customizer/typography/classes-font.php:452
+#: inc/customizer/typography/classes-font.php:472
+#: inc/customizer/typography/classes-font.php:493
+#: inc/customizer/typography/classes-font.php:510
+#: inc/customizer/typography/classes-font.php:526
+#: inc/customizer/typography/classes-font.php:553
+#: inc/customizer/typography/classes-font.php:582
+#: inc/customizer/typography/classes-font.php:613
+#: inc/customizer/typography/classes-font.php:637
+#: inc/customizer/typography/classes-font.php:660
+#: inc/customizer/typography/classes-font.php:683
+#: inc/customizer/typography/classes-font.php:712
+#: inc/customizer/typography/classes-font.php:742
+#: inc/customizer/typography/classes-font.php:768
+#: inc/customizer/typography/classes-font.php:786
+#: inc/customizer/typography/classes-font.php:804
+#: inc/customizer/typography/classes-font.php:828
+#: inc/customizer/typography/classes-font.php:855
+#: inc/customizer/typography/classes-font.php:904
+#: inc/customizer/typography/classes-font.php:927
+#: inc/customizer/typography/classes-font.php:950
+#: inc/customizer/typography/classes-font.php:986
+#: inc/customizer/typography/classes-font.php:1003
+#: inc/customizer/typography/classes-font.php:1022
+#: inc/customizer/typography/classes-font.php:1122
+#: inc/customizer/typography/classes-font.php:1141
+#: inc/customizer/typography/classes-font.php:1161
+#: inc/customizer/typography/classes-font.php:1218
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:113
+#: inc/customizer/typography/classes-font.php:136
+#: inc/customizer/typography/classes-font.php:200
+#: inc/customizer/typography/classes-font.php:233
+#: inc/customizer/typography/classes-font.php:264
+#: inc/customizer/typography/classes-font.php:293
+#: inc/customizer/typography/classes-font.php:321
+#: inc/customizer/typography/classes-font.php:453
+#: inc/customizer/typography/classes-font.php:473
+#: inc/customizer/typography/classes-font.php:511
+#: inc/customizer/typography/classes-font.php:554
+#: inc/customizer/typography/classes-font.php:583
+#: inc/customizer/typography/classes-font.php:601
+#: inc/customizer/typography/classes-font.php:638
+#: inc/customizer/typography/classes-font.php:661
+#: inc/customizer/typography/classes-font.php:684
+#: inc/customizer/typography/classes-font.php:713
+#: inc/customizer/typography/classes-font.php:787
+#: inc/customizer/typography/classes-font.php:856
+#: inc/customizer/typography/classes-font.php:880
+#: inc/customizer/typography/classes-font.php:1045
+#: inc/customizer/typography/classes-font.php:1162
+#: inc/customizer/typography/classes-font.php:1198
+msgid "Extra Bold 800"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:114
+#: inc/customizer/typography/classes-font.php:137
+#: inc/customizer/typography/classes-font.php:234
+#: inc/customizer/typography/classes-font.php:265
+#: inc/customizer/typography/classes-font.php:294
+#: inc/customizer/typography/classes-font.php:454
+#: inc/customizer/typography/classes-font.php:474
+#: inc/customizer/typography/classes-font.php:512
+#: inc/customizer/typography/classes-font.php:555
+#: inc/customizer/typography/classes-font.php:584
+#: inc/customizer/typography/classes-font.php:639
+#: inc/customizer/typography/classes-font.php:662
+#: inc/customizer/typography/classes-font.php:685
+#: inc/customizer/typography/classes-font.php:714
+#: inc/customizer/typography/classes-font.php:788
+#: inc/customizer/typography/classes-font.php:857
+#: inc/customizer/typography/classes-font.php:1163
+msgid "Extra Bold 800 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:115
+#: inc/customizer/typography/classes-font.php:138
+#: inc/customizer/typography/classes-font.php:201
+#: inc/customizer/typography/classes-font.php:235
+#: inc/customizer/typography/classes-font.php:266
+#: inc/customizer/typography/classes-font.php:295
+#: inc/customizer/typography/classes-font.php:322
+#: inc/customizer/typography/classes-font.php:418
+#: inc/customizer/typography/classes-font.php:455
+#: inc/customizer/typography/classes-font.php:475
+#: inc/customizer/typography/classes-font.php:527
+#: inc/customizer/typography/classes-font.php:556
+#: inc/customizer/typography/classes-font.php:585
+#: inc/customizer/typography/classes-font.php:640
+#: inc/customizer/typography/classes-font.php:663
+#: inc/customizer/typography/classes-font.php:715
+#: inc/customizer/typography/classes-font.php:789
+#: inc/customizer/typography/classes-font.php:858
+#: inc/customizer/typography/classes-font.php:881
+#: inc/customizer/typography/classes-font.php:905
+#: inc/customizer/typography/classes-font.php:928
+#: inc/customizer/typography/classes-font.php:951
+#: inc/customizer/typography/classes-font.php:987
+#: inc/customizer/typography/classes-font.php:1023
+#: inc/customizer/typography/classes-font.php:1046
+#: inc/customizer/typography/classes-font.php:1142
+#: inc/customizer/typography/classes-font.php:1164
+#: inc/customizer/typography/classes-font.php:1199
+msgid "Black 900"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:116
+#: inc/customizer/typography/classes-font.php:139
+#: inc/customizer/typography/classes-font.php:236
+#: inc/customizer/typography/classes-font.php:267
+#: inc/customizer/typography/classes-font.php:296
+#: inc/customizer/typography/classes-font.php:419
+#: inc/customizer/typography/classes-font.php:456
+#: inc/customizer/typography/classes-font.php:476
+#: inc/customizer/typography/classes-font.php:528
+#: inc/customizer/typography/classes-font.php:557
+#: inc/customizer/typography/classes-font.php:586
+#: inc/customizer/typography/classes-font.php:641
+#: inc/customizer/typography/classes-font.php:664
+#: inc/customizer/typography/classes-font.php:716
+#: inc/customizer/typography/classes-font.php:790
+#: inc/customizer/typography/classes-font.php:859
+#: inc/customizer/typography/classes-font.php:906
+#: inc/customizer/typography/classes-font.php:929
+#: inc/customizer/typography/classes-font.php:952
+#: inc/customizer/typography/classes-font.php:1024
+#: inc/customizer/typography/classes-font.php:1143
+#: inc/customizer/typography/classes-font.php:1165
+msgid "Black 900 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:157
+#: inc/customizer/typography/classes-font.php:180
+#: inc/customizer/typography/classes-font.php:198
+#: inc/customizer/typography/classes-font.php:229
+#: inc/customizer/typography/classes-font.php:260
+#: inc/customizer/typography/classes-font.php:289
+#: inc/customizer/typography/classes-font.php:347
+#: inc/customizer/typography/classes-font.php:374
+#: inc/customizer/typography/classes-font.php:397
+#: inc/customizer/typography/classes-font.php:449
+#: inc/customizer/typography/classes-font.php:469
+#: inc/customizer/typography/classes-font.php:550
+#: inc/customizer/typography/classes-font.php:579
+#: inc/customizer/typography/classes-font.php:634
+#: inc/customizer/typography/classes-font.php:657
+#: inc/customizer/typography/classes-font.php:680
+#: inc/customizer/typography/classes-font.php:709
+#: inc/customizer/typography/classes-font.php:783
+#: inc/customizer/typography/classes-font.php:852
+#: inc/customizer/typography/classes-font.php:878
+#: inc/customizer/typography/classes-font.php:947
+#: inc/customizer/typography/classes-font.php:967
+#: inc/customizer/typography/classes-font.php:983
+#: inc/customizer/typography/classes-font.php:1019
+#: inc/customizer/typography/classes-font.php:1043
+#: inc/customizer/typography/classes-font.php:1119
+#: inc/customizer/typography/classes-font.php:1158
+#: inc/customizer/typography/classes-font.php:1196
+#: inc/customizer/typography/classes-font.php:1215
+msgid "Semi Bold 600"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:158
+#: inc/customizer/typography/classes-font.php:181
+#: inc/customizer/typography/classes-font.php:230
+#: inc/customizer/typography/classes-font.php:261
+#: inc/customizer/typography/classes-font.php:290
+#: inc/customizer/typography/classes-font.php:348
+#: inc/customizer/typography/classes-font.php:375
+#: inc/customizer/typography/classes-font.php:398
+#: inc/customizer/typography/classes-font.php:450
+#: inc/customizer/typography/classes-font.php:470
+#: inc/customizer/typography/classes-font.php:551
+#: inc/customizer/typography/classes-font.php:580
+#: inc/customizer/typography/classes-font.php:635
+#: inc/customizer/typography/classes-font.php:658
+#: inc/customizer/typography/classes-font.php:681
+#: inc/customizer/typography/classes-font.php:710
+#: inc/customizer/typography/classes-font.php:784
+#: inc/customizer/typography/classes-font.php:853
+#: inc/customizer/typography/classes-font.php:948
+#: inc/customizer/typography/classes-font.php:984
+#: inc/customizer/typography/classes-font.php:1020
+#: inc/customizer/typography/classes-font.php:1120
+#: inc/customizer/typography/classes-font.php:1159
+#: inc/customizer/typography/classes-font.php:1216
+msgid "Semi Bold 600 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:194
+#: inc/customizer/typography/classes-font.php:252
+#: inc/customizer/typography/classes-font.php:281
+#: inc/customizer/typography/classes-font.php:339
+#: inc/customizer/typography/classes-font.php:366
+#: inc/customizer/typography/classes-font.php:441
+#: inc/customizer/typography/classes-font.php:542
+#: inc/customizer/typography/classes-font.php:571
+#: inc/customizer/typography/classes-font.php:596
+#: inc/customizer/typography/classes-font.php:628
+#: inc/customizer/typography/classes-font.php:651
+#: inc/customizer/typography/classes-font.php:701
+#: inc/customizer/typography/classes-font.php:844
+#: inc/customizer/typography/classes-font.php:874
+#: inc/customizer/typography/classes-font.php:941
+#: inc/customizer/typography/classes-font.php:977
+#: inc/customizer/typography/classes-font.php:1039
+msgid "Extra Light 200"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:253
+#: inc/customizer/typography/classes-font.php:282
+#: inc/customizer/typography/classes-font.php:340
+#: inc/customizer/typography/classes-font.php:367
+#: inc/customizer/typography/classes-font.php:442
+#: inc/customizer/typography/classes-font.php:543
+#: inc/customizer/typography/classes-font.php:572
+#: inc/customizer/typography/classes-font.php:629
+#: inc/customizer/typography/classes-font.php:652
+#: inc/customizer/typography/classes-font.php:702
+#: inc/customizer/typography/classes-font.php:845
+#: inc/customizer/typography/classes-font.php:942
+#: inc/customizer/typography/classes-font.php:978
+msgid "Extra Light 200 Italic"
+msgstr ""
+
+#: inc/customizer/typography/classes-font.php:1333
+msgctxt "%s font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:16
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:32
+msgid "Title Font family"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:48
+msgid "Title Weight"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:64
+msgid "Section title case"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:68
+msgid "Normal"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:69
+msgid "Uppercase"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:70
+msgid "Lowercase"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:85
+msgid "Content Font Family"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:96
+msgid "Color Options"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:113
+msgid "Header Color"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:129
+msgid "Header Text Color"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:146
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:163
+msgid "Primary BG Text Color"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:180
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer/typography/typography.php:197
+msgid "Secondary BG Text Color"
+msgstr ""
+
+#: assets/lib/tgmpa/recommended-plugins.php:63
+msgid "WooCommerce"
+msgstr ""
+
+#: assets/lib/tgmpa/recommended-plugins.php:68
+msgid "YITH WooCommerce Wishlist"
+msgstr ""
+
+#: assets/lib/tgmpa/recommended-plugins.php:73
+msgid "YITH WooCommerce Quick View"
+msgstr ""
+
+#: assets/lib/tgmpa/recommended-plugins.php:78
+msgid "YITH WooCommerce Compare"
+msgstr ""
+
+#: assets/lib/tgmpa/recommended-plugins.php:83
+msgid "Booster Extension"
+msgstr ""
+
+#. Name of the theme
+msgid "Storer"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Storer is a professional responsive WordPress WooCommerce based theme built "
+"to create modern powerful e-commerce website. Super Flexible, easy to adjust "
+"theme settings and options gives your site a clean and elegant look. Storer "
+"has adequate built-in features that are required to build an online shop or "
+"stores."
+msgstr ""
+
+#. Author of the theme
+msgid "ThemeInWP"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.themeinwp.com"
+msgstr ""

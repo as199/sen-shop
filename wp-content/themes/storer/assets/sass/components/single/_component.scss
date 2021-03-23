@@ -1,0 +1,204 @@
+.#{$prefix}-single-post{
+    margin: 0;
+    p{
+        text-align: initial;
+    }
+    .#{$prefix}-meta-tag{
+        padding-top: 15px;
+    }
+    .entry-content,
+    .entry-header{
+        .entry-title,
+        p,h2,h3,
+        .post-thumbnail,
+        figure,figcaption,
+        .wp-block-cover,
+        .wp-block-button{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        .wp-block-gallery{
+            margin-top: 0;
+            &.slick-slider{
+                margin-top: 20px;
+            }
+        }
+    }
+    .entry-header{
+        p{
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+    }
+  
+    .post-thumbnail,
+    .wp-block-image{
+        text-align: center;
+        background-color: $color_white;
+        border-radius: 5px;
+        padding: 15px;
+        figcaption{
+            margin: 0;
+            padding-top: 5px;
+        }
+        img{
+            // box-shadow: 0 0 5px 5px rgba($color_light_gray,0.6);
+        }
+    }
+
+    figure{
+        text-align: center;
+    }
+    
+    .post-thumbnail{
+        margin-top: 15px;
+    }
+    .entry-content{
+        margin: 0;
+        figcaption{
+            font-size: 1rem;
+            color: inherit;
+        }
+        pre{
+            &.wp-block-verse,
+            &.wp-block-preformatted{
+                // background-color: $color_light_gray;
+                background-color: $color_white;
+                font-size: 1rem;
+                font-family: inherit;
+                padding: 20px;
+                margin-bottom: 0;
+                margin-top: 15px;
+                white-space: pre-line;
+                text-align: justify;
+                color: $color_black;
+              
+            }
+        }
+        
+    }
+    .entry-footer{
+        padding: 5px 7.5px 15px;
+        font-weight: $font_weight_semi_bold;
+        @include border();
+        border-color: $color_light_gray;
+        span,
+        a{
+            display: inline-block;
+            margin-top: 5px;
+        }
+        .#{$prefix}-icon,
+        i{
+            padding-left: 5px;
+            display: inline-block;
+            color: $primary_color;
+        }
+        .#{$prefix}-links{
+            padding: 0 7.5px;
+        }
+        a{
+            padding-left: 5px;
+        }
+    }
+    blockquote{
+        padding: 0;
+        margin: 0;
+        p{
+            font-size: 1.2rem;
+            padding: 30px;
+            position: relative;
+            &:before,
+            &:after{
+                display: block;
+                position: absolute;
+                @extend %fontAwesome;
+                font-size: 30px;
+                color: $primary_color;
+    
+            }
+            &:before{
+                content: '\f10d';
+                left: 0;
+                top: 0;
+            }
+            &:after{
+                content: '\f10e';
+                right: 0;
+                bottom: 0;
+            }
+        }
+        cite{
+            display: block;
+            margin-top: 10px;
+            text-align: end;
+            color: $primary_color;
+        }
+       
+    }
+    .wp-block-pullquote{
+        padding: 0;
+    }
+    ul{
+        margin: 0;
+        li{
+            padding-top: 15px;
+        }
+    }
+    .wp-block-categories{
+        padding-top: 15px;
+        list-style: lower-roman;
+        select{
+            padding: 7px 15px;
+        }
+        li{
+            padding-left: 5px;
+        }
+    }
+    .wp-block-code{
+        background-color: $color_white;
+        font-family: inherit;
+        margin-bottom: 0;
+    }
+    code{
+        font-family: inherit;
+    }
+    table{
+        td{
+            padding: 10px 15px;
+            text-align: center;
+        }
+    }
+    .wp-block-gallery{
+       @extend %reset-ul;
+        .blocks-gallery-item{
+            margin-bottom: 0;
+        }
+        figcaption{
+            color: $color_white;
+        }
+        li{
+            figure{
+                margin-top: 0;
+            }
+        }
+    }
+    .slick-slider{
+        li{
+            padding-top: 0;
+        }
+
+    }
+    hr{
+        height: 2px;
+        background-color: $color_light_gray;
+        margin: 20px 0 0;
+    }
+    .wp-block-image{
+        @extend %clearfix;
+        margin-bottom: 0;
+    }
+    .#{$prefix}-like-dislike-button,
+    .booster-author-block{
+        margin-top: 15px;
+    }
+}

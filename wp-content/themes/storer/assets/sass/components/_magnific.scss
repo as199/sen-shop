@@ -1,0 +1,30 @@
+.mfp-container{
+    .mfp-arrow-left,
+    .mfp-arrow-right{
+        &:after{
+            content: none;
+        }
+        &:before{
+            @extend %fontAwesome;
+            border: 0;
+            opacity: 1;
+            color: $color_white;
+            font-size: 30px;
+        }
+        &:hover{
+            &:before{
+                color: $primary_color;
+            }
+        }
+    }
+    .mfp-arrow-left{
+        &:before{
+            content:'\f104';
+        }
+    }
+    .mfp-arrow-right{
+        &:before{
+            content:'\f105';
+        }
+    }
+}

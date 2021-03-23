@@ -1,0 +1,21 @@
+
+.desktop ul.#{$prefix}-nav-menu,
+.desktop div.#{$prefix}-nav-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    @extend %reset-ul;
+}
+.desktop ul.#{$prefix}-nav-menu>li a,
+.desktop div.#{$prefix}-nav-menu>ul>li a{
+    position: relative;
+    display: block;
+}
+.desktop ul.#{$prefix}-nav-menu>li>a,
+.desktop div.#{$prefix}-nav-menu>ul>li>a{
+    @extend %first-level; 
+    &:hover,
+    &:focus-within{
+        background-color: $color_white;
+        color: $primary_color;
+    }
+}

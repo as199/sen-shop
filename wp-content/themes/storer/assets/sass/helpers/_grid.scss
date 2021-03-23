@@ -1,0 +1,165 @@
+.#{$prefix}-container-fluid{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.#{$prefix}-container{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media(lg){
+        max-width: 1300px;
+        margin: auto;
+    }
+}
+.site-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 60px;
+    max-width: 100%;
+    @include media(lg){
+        max-width: 1300px;
+        margin: auto;
+    }
+    #primary,
+    #secondary{
+        padding-top: 15px;
+    }
+}
+#primary,
+#secondary{
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#primary{
+    @include media(md){
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+#secondary{
+    @include media(md){
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
+.no-sidebar{
+    #primary{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #secondary{
+        display: none;
+    }
+}
+.right-sidebar{
+    #primary{
+        order: 1;
+
+    }
+    #secondary{
+        order: 2;
+    }
+}
+.left-sidebar{
+    #primary{
+        order: 2;
+
+    }
+    #secondary{
+        order: 1;
+    }
+}
+.#{$prefix}-row,
+.#{$prefix}-c-row,
+.#{$prefix}-d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.#{$prefix}-row{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.#{$prefix}-c-row{
+    margin-left: -15px;
+    margin-right: -15px;
+    .#{$prefix}-col{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.#{$prefix}-col{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.#{$prefix}-col-6{
+    @include media(xs){
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+.#{$prefix}-col-md-3{
+    @include media(md){
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+.#{$prefix}-col-md-4{
+    @include media(md){
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+.#{$prefix}-col-md-8{
+    @include media(md){
+        flex: 0 0 66.67%;
+        max-width: 66.67%;
+    }
+}
+.#{$prefix}-col-md-9{
+    @include media(md){
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+.#{$prefix}-col-lg-2{
+    @include media(lg){
+        flex: 0 0 16.66%;
+        max-width: 16.66%;
+    }
+}
+.#{$prefix}-col-lg-3{
+    @include media(lg){
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.#{$prefix}-col-lg-4{
+    @include media(lg){
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+.#{$prefix}-col-lg-8{
+    @include media(lg){
+        flex: 0 0 66.67%;
+        max-width: 66.67%;
+    }
+}
+.#{$prefix}-col-lg-9{
+    @include media(lg){
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+.#{$prefix}-col-lg-10{
+    @include media(lg){
+        flex: 0 0 83.34%;
+        max-width: 83.34%;
+    }
+}

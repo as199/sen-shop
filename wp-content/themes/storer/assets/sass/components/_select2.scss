@@ -1,0 +1,141 @@
+.woocommerce-ordering,
+.#{$prefix}-product-summary,
+.#{$prefix}-select2-dropdown{
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        line-height: 40px;
+    }
+    .select2-container{
+        .select2-choice,
+        .select2-selection{
+           height: 40px;
+           line-height: 40px;
+           border-radius: 0;
+           font-weight: $font_weight_semi_bold;
+           padding: 0;
+           background-color: $color_light_gray;
+           &:focus{
+               outline: 1px solid $color_light_gray;
+           }
+           .select2-search-choice-close,
+           .select2-selection__clear{
+                display: none;
+            }
+           .select2-chosen{
+                background-color: $color_light_gray;
+                margin: 0;
+                padding-right: 25px;
+                padding-left: 7.5px;
+           }
+           
+           .select2-selection__arrow{
+               width: 25px;
+               display: block;
+               text-align: center;
+               background: $color_light_gray;
+               border: 0;
+               border-radius: 0;
+               color: $color_black;
+               b{
+                   background-image: none;
+                   border: 0;
+                   height: initial;
+                   width: 100%;
+                   left: initial;
+                   top: initial;
+                   margin: 0;
+                   position: relative;
+                   &:before{
+                       @extend %fontAwesome;
+                       content:'\f107';
+                        @include transition();
+                    }
+               }
+           }
+       }
+       &.select2-container--open{
+            .select2-arrow,
+            .select2-selection__arrow{
+                b{
+                    &:before{
+                        content: "\f106";
+                    }
+                }
+           }
+       }
+       
+    }
+}
+
+.#{$prefix}-product-summary,
+.woocommerce-ordering{
+    .select2-container{
+        .select2-choice{
+            border: 0;
+            padding: 0 15px;
+           .select2-chosen{
+                padding-right: 30px;
+           }
+           .select2-arrow{
+               right: 10px;
+           }
+       }
+       
+    }
+
+}
+.woocommerce-ordering{
+    .select2-container{
+        &.select2-container--default .select2-selection--single .select2-selection__rendered{
+            color: $color_white;
+        }
+        .select2-selection{
+            background: $color_black;
+            color: $color_white;
+           .select2-chosen{
+                background-color: $color_black;
+                color: $color_white;
+           }
+           .select2-selection__arrow{
+               background-color: $color_black;
+               color: $color_white;
+           }
+       }
+       
+    }
+
+}
+.#{$prefix}-product-summary{
+    .select2-container{
+        .select2-choice{
+            background: $color_light_gray;
+            color: $text_color;
+           .select2-chosen{
+                background-color: $color_light_gray;
+                color: $text_color;
+           }
+           .select2-arrow{
+               background-color: $color_light_gray;
+               color: $text_color;
+           }
+       }
+       
+    }
+
+}
+.woocommerce div.product form.cart .reset_variations{
+    font-size: 14px;
+}
+.reset_variations{
+    padding-left: 15px;
+}
+.select2-drop,
+.select2-dropdown{
+    width: 200px !important;
+    .select2-search,
+    .select2-search__field{
+        display: none;
+    }
+    .select2-results{
+        padding: 0;
+    }
+}

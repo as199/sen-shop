@@ -1,0 +1,41 @@
+.#{$prefix}-btn{
+    display: inline-block;
+    @include border();
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.#{$prefix}-btn-sm{
+    padding: 0 20px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 12px;
+    &.#{$prefix}-rounded{
+        border-radius: 15px;
+    }
+}
+
+.#{$prefix}-btn-with-icon{
+    padding: 0 45px;
+    height: 45px;
+    line-height: 43px;
+    position: relative;
+    span{
+        display: inline-block;
+    }
+    .#{$prefix}-icon{
+        padding-left: 10px;
+    }
+}
+.#{$prefix}-btn{
+    &.#{$prefix}-primary-btn{
+        background-color: $primary_color;
+        border-color: $primary_color;
+        color: $primary_bg_text_color;
+        &:hover{
+            background-color: $secondary_color;
+            border-color: $secondary_color;
+            color: $secondary_bg_text_color;
+        }
+    }
+    
+}

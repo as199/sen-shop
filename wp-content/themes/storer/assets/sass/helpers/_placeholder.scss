@@ -1,0 +1,26 @@
+
+%fontAwesome{
+    display: inline-block;
+    font-family: "fontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+}
+%reset-ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+%clearfix{
+    &:before,
+    &:after{
+        clear: both;
+        content:'';
+        display: block;
+
+    }
+}
+%perspective{
+    @include transform(perspective(1px) translateZ(0));
+}
